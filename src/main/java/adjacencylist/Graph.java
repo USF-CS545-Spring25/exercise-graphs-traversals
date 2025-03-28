@@ -7,6 +7,7 @@ import queue.Queue;
 
 public class Graph {
     private Edge[] graph; // adjacency list for this graph
+    private int timeCounter = 0; // counter to use in the discovery/finish time computation
 
     public static class Edge {
         private int neighbor; // id of the neighbor (id of the destination node)
